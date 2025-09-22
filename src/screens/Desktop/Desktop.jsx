@@ -5,7 +5,8 @@ export const Desktop = () => {
   const [activeTab, setActiveTab] = useState("Home");
 
   const handleHireMe = () => {
-    window.open("mailto:mukundwankhade1234@gmail.com.com?subject=Hire Me - Portfolio Inquiry&body=Hi Mukund, I'm interested in discussing a potential opportunity with you.", "_blank");
+    // Open Google Form for hiring inquiries
+    window.open("https://forms.gle/D277vum7pApTjJLg8", "_blank");
   };
 
   const handleDownloadResume = () => {
@@ -228,21 +229,21 @@ export const Desktop = () => {
       default:
         return (
           <div className="home-content">
-            <p className="hey-i-am-mukund">
+            <p className="hey-i-am-mukund animate-slide-up" style={{ animationDelay: '0.1s' }}>
               <span className="span">Hey , I am</span>
               <span className="text-wrapper-4">&nbsp;</span>
               <span className="text-wrapper-5">Mukund..</span>
             </p>
 
-            <div className="text-wrapper-6">Developer</div>
-            <div className="text-wrapper-7">Data Analyst</div>
-            <div className="text-wrapper-8">&</div>
+            <div className="text-wrapper-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>Developer</div>
+            <div className="text-wrapper-7 animate-slide-up" style={{ animationDelay: '0.3s' }}>Data Analyst</div>
+            <div className="text-wrapper-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>&</div>
 
-            <p className="transforming-data">
+            <p className="transforming-data animate-slide-up" style={{ animationDelay: '0.5s' }}>
               "Transforming data into insights and ideas into code."
             </p>
 
-            <div className="home-buttons">
+            <div className="home-buttons animate-slide-up" style={{ animationDelay: '0.6s' }}>
               <div className="div-wrapper" onClick={handleHireMe}>
                 <div className="text-wrapper-9">Hire me</div>
               </div>
@@ -311,49 +312,6 @@ export const Desktop = () => {
         <div className="ellipse-2 rotating-ring"></div>
         <div className="ellipse-3 rotating-ring"></div>
         <div className="ellipse-4 rotating-ring"></div>
-        
-        {/* Programming language logos positioned on rings */}
-        <img
-          className="floating-icon icon-1"
-          alt="JavaScript"
-          src="https://c.animaapp.com/hJOoXkax/img/group@2x.png"
-        />
-
-        <img
-          className="floating-icon icon-2"
-          alt="Python"
-          src="https://c.animaapp.com/hJOoXkax/img/image-1@2x.png"
-        />
-
-        <img
-          className="floating-icon icon-3"
-          alt="React"
-          src="https://c.animaapp.com/hJOoXkax/img/favpng-ff3446a4dba6c7655456925a15d4b806-1@2x.png"
-        />
-
-        <img
-          className="floating-icon icon-4"
-          alt="HTML5"
-          src="https://c.animaapp.com/hJOoXkax/img/vscode-icons-file-type-html.svg"
-        />
-
-        <img
-          className="floating-icon icon-5"
-          alt="CSS3"
-          src="https://c.animaapp.com/hJOoXkax/img/skill-icons-css.svg"
-        />
-
-        <img
-          className="floating-icon icon-6"
-          alt="Database"
-          src="https://c.animaapp.com/hJOoXkax/img/f1ff42686876d6ebf42039ed196d2c3f-1@2x.png"
-        />
-
-        <img
-          className="floating-icon icon-7"
-          alt="Data Analysis"
-          src="https://c.animaapp.com/hJOoXkax/img/pngwing-com--1--1@2x.png"
-        />
       </div>
 
       <div className="content-area">
